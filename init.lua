@@ -3,13 +3,25 @@ local config = {
 
   plugins = {
     init = {
-      { "Mofiqul/dracula.nvim" }
+      -- colorscheme
+      { "Mofiqul/dracula.nvim" },
+
+      -- languages
+      { "hashivim/vim-terraform" }
     }
   },
 
   options = {
     opt = {
       relativenumber = false
+    }
+  },
+
+  telescope = {
+    defaults = {
+      file_ignore_patterns = {
+        "^node_modules/"
+      }
     }
   },
 
@@ -24,7 +36,7 @@ local config = {
     " ",
     " ",
     " ",
-  },
+  }
 }
 
 return config
