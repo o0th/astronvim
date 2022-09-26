@@ -7,7 +7,8 @@ local config = {
       { "Mofiqul/dracula.nvim" },
 
       -- languages
-      { "hashivim/vim-terraform" }
+      { "hashivim/vim-terraform" },
+      { "LhKipp/nvim-nu"}
     }
   },
 
