@@ -8,7 +8,7 @@ local config = {
 
       -- languages
       { "hashivim/vim-terraform" },
-      { "LhKipp/nvim-nu"}
+      { "LhKipp/nvim-nu" }
     }
   },
 
@@ -37,6 +37,10 @@ local config = {
     " ",
     " ",
     " ",
+  },
+
+  updater = {
+    branch = "nightly"
   }
 }
 

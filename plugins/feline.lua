@@ -1,6 +1,3 @@
-local provider = require("core.status").provider
-local hl = require("core.status").hl
-
 return function(config)
   -- remove default file_info
   table.remove(config.components.active[1], 5)
