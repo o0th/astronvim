@@ -1,15 +1,21 @@
 local config = {
-  colorscheme = "dracula",
+  colorscheme = "catppuccin",
 
   plugins = {
     init = {
       -- colorscheme
       { "Mofiqul/dracula.nvim" },
+      { "catppuccin/nvim", as = "catppuccin" },
 
       -- languages
       { "hashivim/vim-terraform" },
       { "LhKipp/nvim-nu" }
-    }
+    },
+
+    heirline = function(config)
+      config[1][3] = astronvim.status.component.file_info { filename = { modify = ":." } }
+      return config
+    end,
   },
 
   options = {
