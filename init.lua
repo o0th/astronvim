@@ -1,5 +1,5 @@
 local config = {
-  colorscheme = "catppuccin",
+  colorscheme = "dracula",
 
   plugins = {
     init = {
